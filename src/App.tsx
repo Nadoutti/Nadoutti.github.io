@@ -31,7 +31,10 @@ export default function App() {
   const activeId = useActiveSection(ids)
 
   return (
-    <div className="mx-auto max-w-6xl px-5 lg:grid lg:grid-cols-[240px_1fr] lg:gap-12 lg:px-8">
+    // Full-bleed grid: the sidebar hugs the left edge of the viewport instead of
+    // riding along with a centred container. The column widths step up with the
+    // breakpoint so the rail never crowds the text on a 1024px laptop.
+    <div className="px-5 lg:grid lg:grid-cols-[12.5rem_minmax(0,1fr)] lg:gap-8 lg:px-6 xl:grid-cols-[15rem_minmax(0,1fr)] xl:gap-12 xl:px-10">
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-3 focus:py-2 focus:text-sm dark:focus:bg-ink-900"
@@ -42,7 +45,9 @@ export default function App() {
       <MobileNav sections={sections} activeId={activeId} />
       <Sidebar sections={sections} activeId={activeId} />
 
-      <main id="main" className="min-w-0 max-w-3xl">
+      {/* Centred inside the remaining column so wide screens don't leave the
+          text pinned against the sidebar. */}
+      <main id="main" className="mx-auto w-full min-w-0 max-w-3xl">
         <Hero />
 
         {/* `about` is the Hero itself, so it has no entry in `bodies`. */}

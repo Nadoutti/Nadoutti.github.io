@@ -12,7 +12,7 @@ interface SidebarProps {
 /** Desktop-only sticky rail: identity, nav, socials. */
 export function Sidebar({ sections, activeId }: SidebarProps) {
   return (
-    <aside className="hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-between lg:border-r lg:border-ink-200 lg:py-12 lg:pr-8 dark:lg:border-ink-800">
+    <aside className="hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-between lg:border-r lg:border-ink-200 lg:py-10 lg:pr-5 xl:py-12 xl:pr-6 dark:lg:border-ink-800">
       <div>
         <a href="#about" className="block">
           <p className="text-lg font-semibold text-ink-900 dark:text-ink-50">
@@ -26,8 +26,10 @@ export function Sidebar({ sections, activeId }: SidebarProps) {
         </nav>
       </div>
 
-      <div className="flex items-center justify-between">
-        <ul className="flex items-center gap-1">
+      {/* -mx-2 pulls the icons' own padding back so they optically line up
+          with the nav labels above and the sidebar's right edge. */}
+      <div className="-mx-2 flex items-center justify-between gap-2">
+        <ul className="flex flex-wrap items-center">
           {profile.socials.map((social) => (
             <li key={social.label}>
               <a
@@ -36,7 +38,7 @@ export function Sidebar({ sections, activeId }: SidebarProps) {
                 rel="noreferrer"
                 aria-label={social.label}
                 title={social.label}
-                className="block rounded-md p-2 text-ink-500 transition-colors hover:bg-ink-100 hover:text-ink-900 dark:text-ink-400 dark:hover:bg-ink-800 dark:hover:text-ink-100"
+                className="flex h-9 w-9 items-center justify-center rounded-md text-ink-500 transition-colors hover:bg-ink-100 hover:text-ink-900 dark:text-ink-400 dark:hover:bg-ink-800 dark:hover:text-ink-100"
               >
                 <Icon name={social.icon} />
               </a>

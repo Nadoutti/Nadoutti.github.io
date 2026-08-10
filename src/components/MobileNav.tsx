@@ -32,7 +32,9 @@ export function MobileNav({ sections, activeId }: MobileNavProps) {
   }, [open])
 
   return (
-    <header className="sticky top-0 z-30 border-b border-ink-200 bg-white/85 backdrop-blur lg:hidden dark:border-ink-800 dark:bg-ink-950/85">
+    // -mx-5 cancels the page container's padding so the bar and its border
+    // span the full viewport width.
+    <header className="sticky top-0 z-30 -mx-5 border-b border-ink-200 bg-white/85 backdrop-blur lg:hidden dark:border-ink-800 dark:bg-ink-950/85">
       <div className="flex items-center justify-between px-5 py-3">
         <a href="#about" className="font-semibold text-ink-900 dark:text-ink-50">
           {profile.name}
