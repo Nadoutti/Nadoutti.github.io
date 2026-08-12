@@ -10,7 +10,6 @@ export const projects: Project[] = [
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'GitHub Actions'],
     repoUrl: 'https://github.com/Nadoutti/Nadoutti.github.io',
     liveUrl: 'https://nadoutti.github.io/',
-    highlight: true,
   },
   {
     name: 'Project Name',

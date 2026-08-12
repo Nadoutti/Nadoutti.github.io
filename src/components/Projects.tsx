@@ -13,11 +13,10 @@ export function Projects() {
       {ordered.map((project) => (
         <li
           key={project.name}
-          className={`flex flex-col rounded-lg border p-4 transition-colors ${
-            project.highlight
-              ? 'border-accent-400/60 bg-accent-400/[0.04] dark:border-accent-400/40'
-              : 'border-ink-200 hover:border-ink-300 dark:border-ink-800 dark:hover:border-ink-700'
-          }`}
+          className={`flex flex-col rounded-lg border p-4 transition-colors ${project.highlight
+            ? 'border-accent-400/60 bg-accent-400/[0.04] dark:border-accent-400/40'
+            : 'border-ink-200 hover:border-ink-300 dark:border-ink-800 dark:hover:border-ink-700'
+            }`}
         >
           <h3 className="font-semibold text-ink-900 dark:text-ink-100">{project.name}</h3>
 

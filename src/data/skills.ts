@@ -4,7 +4,7 @@ import type { SkillGroup } from '../types'
 export const skills: SkillGroup[] = [
   {
     name: 'Languages',
-    items: ['TypeScript', 'JavaScript', 'Python', 'Java', 'SQL'],
+    items: ['TypeScript', 'JavaScript', 'Python', 'Java', 'SQL', 'Go'],
   },
   {
     name: 'Frontend',
@@ -12,14 +12,14 @@ export const skills: SkillGroup[] = [
   },
   {
     name: 'Backend',
-    items: ['Node.js', 'Express', 'REST APIs', 'Spring Boot'],
+    items: ['Node.js', 'Express', 'REST APIs', 'Spring Boot', 'FastAPI', 'NestJS'],
   },
   {
     name: 'Data',
-    items: ['PostgreSQL', 'MongoDB', 'Redis'],
+    items: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma'],
   },
   {
     name: 'Tools & Infra',
-    items: ['Git', 'GitHub Actions', 'Docker', 'Linux'],
+    items: ['Git', 'GitHub Actions', 'Docker', 'Linux', 'Railway', 'Auth0'],
   },
 ]
