@@ -1,27 +1,17 @@
 import type { Project } from '../types'
 
-// TODO: replace with your real projects. `highlight: true` pins a project to the
-// top of the grid with an accent border.
+// `highlight: true` pins a project to the top of the grid with an accent border.
 export const projects: Project[] = [
   {
-    name: 'Personal Portfolio',
+    name: 'RaspiBus',
     description:
-      'This site. React + TypeScript + Tailwind, statically built with Vite and deployed to GitHub Pages by a GitHub Actions workflow on every push to main.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'GitHub Actions'],
-    repoUrl: 'https://github.com/Nadoutti/Nadoutti.github.io',
-    liveUrl: 'https://nadoutti.github.io/',
+      'Accessibility project co-founded with a hardware-focused peer to help blind residents of São Paulo identify and board public buses, informed by field research with ~30 visually impaired participants. Trained Ultralytics/PyTorch computer vision models to ~78% accuracy on an augmented dataset (400 base images expanded via rotation and transformation), sized to run on a Raspberry Pi — accuracy traded for latency, since the model predicts continuously in low-stakes real time. Secured ~R$1,000 in prototype funding and interest in a pilot with São Paulo public transit.',
+    tech: ['Python', 'PyTorch', 'Ultralytics', 'Computer Vision', 'Raspberry Pi'],
   },
   {
-    name: 'Project Name',
+    name: 'Unofficial Tally SDK',
     description:
-      'One or two sentences: what problem it solves and the one technical decision you would defend in an interview.',
-    tech: ['Node.js', 'PostgreSQL'],
-    repoUrl: 'https://github.com/Nadoutti',
-  },
-  {
-    name: 'Another Project',
-    description: 'What it does and why it was interesting to build.',
-    tech: ['Python'],
-    repoUrl: 'https://github.com/Nadoutti',
+      "SDK built for Instituto Na Prática after the official Tally API proved too limited for the institute's complex forms and integrations. Used internally to streamline candidate screening for job applications.",
+    tech: ['Python', 'REST APIs', 'Automation'],
   },
 ]

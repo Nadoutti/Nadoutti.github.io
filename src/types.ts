@@ -13,9 +13,11 @@ export interface SocialLink {
 export interface Profile {
   name: string
   title: string
-  tagline: string
   location: string
   email: string
+  phone: string
+  /** One-line pitch rendered above the bio in the hero. */
+  tagline: string
   /** Path to a photo in `public/`, or `null` to render initials instead. */
   photo: string | null
   bio: string[]

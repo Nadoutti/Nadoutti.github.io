@@ -1,25 +1,28 @@
 import type { SkillGroup } from '../types'
 
-// TODO: trim and reorder these to match what you actually use.
 export const skills: SkillGroup[] = [
   {
-    name: 'Languages',
-    items: ['TypeScript', 'JavaScript', 'Python', 'Java', 'SQL', 'Go'],
+    name: 'Backend',
+    items: ['Python', 'FastAPI', 'Flask', 'Celery', 'Node.js', 'NestJS', 'Go (Gin)', 'REST APIs', 'SQL'],
   },
   {
     name: 'Frontend',
-    items: ['React', 'Vite', 'Tailwind CSS', 'HTML', 'CSS'],
+    items: ['React', 'Next.js', 'Vite', 'TypeScript', 'Tailwind CSS'],
   },
   {
-    name: 'Backend',
-    items: ['Node.js', 'Express', 'REST APIs', 'Spring Boot', 'FastAPI', 'NestJS'],
+    name: 'ML & Data',
+    items: ['PyTorch', 'Ultralytics', 'Computer Vision'],
   },
   {
-    name: 'Data',
-    items: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma'],
+    name: 'Databases & Caching',
+    items: ['PostgreSQL', 'Supabase', 'MongoDB', 'Redis', 'Prisma'],
   },
   {
-    name: 'Tools & Infra',
-    items: ['Git', 'GitHub Actions', 'Docker', 'Linux', 'Railway', 'Auth0'],
+    name: 'DevOps & Cloud',
+    items: ['Docker', 'AWS (S3, SQS)', 'GitHub Actions', 'Git', 'Linux'],
+  },
+  {
+    name: 'Methodologies',
+    items: ['Agile', 'Scrum', 'Software architecture planning', 'Team leadership'],
   },
 ]

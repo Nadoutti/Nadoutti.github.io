@@ -9,6 +9,10 @@ export function Contact() {
         fastest way to reach me is email.
       </p>
 
+      <p className="mt-3 text-sm text-ink-500 dark:text-ink-400">
+        {profile.location} · {profile.phone}
+      </p>
+
       <ul className="mt-5 flex flex-wrap gap-2">
         {profile.socials.map((social) => (
           <li key={social.label}>
