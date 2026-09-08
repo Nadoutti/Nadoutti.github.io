@@ -14,4 +14,11 @@ export const projects: Project[] = [
       "SDK built for Instituto Na Prática after the official Tally API proved too limited for the institute's complex forms and integrations. Used internally to streamline candidate screening for job applications.",
     tech: ['Python', 'REST APIs', 'Automation'],
   },
+
+  {
+    name: 'Hash Identifier',
+    description:
+      "Hash Identifier built with the objective to learn more about hash exploiting, hash implementations and cyber security. The project can serve as tool to identify several types of hashes to exploit them later on.",
+    tech: ['Python', 'Automation', 'CyberSecurity'],
+  },
 ]
