@@ -19,6 +19,6 @@ export const profile: Profile = {
     { label: 'GitHub', href: 'https://github.com/Nadoutti', icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pedro-nadotti/', icon: 'linkedin' },
     { label: 'Email', href: 'mailto:nadottipedro5@gmail.com', icon: 'mail' },
-    { label: 'CV', href: '/cv.pdf', icon: 'file' },
+    { label: 'CV', href: '/Pedro_Nadotti_Resume.pdf', icon: 'file' },
   ],
 }
